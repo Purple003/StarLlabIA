@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  consul:
+    image: consul:1.15
+    ports:
+      - "8500:8500"
+    command: "agent -server -bootstrap-expect=1 -ui -client=0.0.0.0"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  # Service mock pour les tests
+  mock-auth-service:
+    image: mockserver/mockserver:5.15.0
+    ports:
+      - "8081:1080"
+    environment:
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializer.json
+    volumes:
+      - ./test/mock-config:/config
+
+  mock-dataset-service:
+    image: mockserver/mockserver:5.15.0
+    ports:
+      - "8082:1080"
+    environment:
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializer.json
+    volumes:
+      - ./test/mock-config:/config

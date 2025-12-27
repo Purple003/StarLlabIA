@@ -1,0 +1,20 @@
+# src/main/resources/bootstrap.yml
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    consul:
+      host: ${CONSUL_HOST:localhost}
+      port: ${CONSUL_PORT:8500}
+      config:
+        enabled: true
+        format: YAML
+        prefix: config
+        default-context: application
+        profile-separator: '::'
+        data-key: data
+        watch:
+          enabled: true
+          delay: 1000
+        fail-fast: false
