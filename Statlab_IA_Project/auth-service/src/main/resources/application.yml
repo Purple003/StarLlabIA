@@ -1,0 +1,81 @@
+spring:
+  application:
+    name: auth-service
+
+  config:
+    import:
+      - "optional:consul:"
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:authdb}?connectTimeout=30&socketTimeout=30&loginTimeout=30
+    username: ${DB_USER:authuser}
+    password: ${DB_PASSWORD:1234yasmine}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+      minimum-idle: 1
+      initialization-fail-timeout: -1
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+    open-in-view: false
+
+  cloud:
+    config:
+      import-check:
+        enabled: false
+    discovery:
+      simple:
+        enabled: false
+    consul:
+      host: ${CONSUL_HOST:localhost}
+      port: ${CONSUL_PORT:8500}
+      discovery:
+        enabled: true
+        register: true
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${random.value}
+        prefer-ip-address: true
+        health-check-path: /actuator/health
+        health-check-interval: 30s
+        health-check-critical-timeout: 30s
+        fail-fast: false
+        tags:
+          - statlabia
+          - auth
+          - ${spring.profiles.active}
+
+server:
+  port: ${SERVER_PORT:8081} # <-- Nouveau port pour auth-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+
+jwt:
+  secret: "================================StatLabIA-SuperSecretKey-MustBeLongEnoughForHS512================================"
+  expirationMs: 86400000 # 24 heures
+
+logging:
+  level:
+    root: INFO
+    com.example.auth_service: DEBUG
+    org.springframework.security: TRACE
+    org.springframework.web: DEBUG

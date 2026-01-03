@@ -1,0 +1,50 @@
+﻿api-gateway  | 
+api-gateway  |  :: Spring Boot ::                (v3.5.9)
+api-gateway  | 
+api-gateway  | 2026-01-02 13:22:19 [main] INFO  c.e.api_gatway.ApiGatewayApplication - Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 1 (/app/app.jar started by spring in /app)
+api-gateway  | 2026-01-02 13:22:19 [main] INFO  c.e.api_gatway.ApiGatewayApplication - The following 1 profile is active: "dev"
+api-gateway  | 2026-01-02 13:22:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+api-gateway  | 2026-01-02 13:22:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+api-gateway  | 2026-01-02 13:22:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 525 ms. Found 0 Redis repository interfaces.
+api-gateway  | 2026-01-02 13:22:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c0fb5821-e08e-3ff5-bb99-03371b54e967
+api-gateway  | 2026-01-02 13:22:59 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+api-gateway  | 
+api-gateway  | Using generated security password: 221d5d58-f4e3-4371-a465-07cedfc8fe02
+api-gateway  | 
+api-gateway  | 2026-01-02 13:23:03 [main] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration - 
+api-gateway  | 
+api-gateway  | **********************************************************
+api-gateway  | 
+api-gateway  | The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+api-gateway  | 
+api-gateway  | **********************************************************
+api-gateway  | 
+api-gateway  | 
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+api-gateway  | 2026-01-02 13:23:07 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+api-gateway  | 2026-01-02 13:23:08 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+api-gateway  | 2026-01-02 13:23:12 [main] WARN  o.s.c.g.s.w.s.StarterDeprecatedAutoConfiguration - 
+api-gateway  | 
+api-gateway  | **********************************************************
+api-gateway  | 
+api-gateway  | spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+api-gateway  | 
+api-gateway  | **********************************************************
+api-gateway  | 
+api-gateway  | 
+api-gateway  | 2026-01-02 13:23:12 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+api-gateway  | 2026-01-02 13:23:14 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
+api-gateway  | 2026-01-02 13:23:14 [main] INFO  o.s.c.c.s.ConsulServiceRegistry - Registering service with consul: NewService{id='api-gatway-8a573cbf05eeb69f56ce0d266284655e', name='api-gatway', tags=[statlabia, gateway, dev], address='172.22.0.12', meta={secure=false}, port=8080, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='30s', ttl='null', http='http://172.22.0.12:8080/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='30s', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+api-gateway  | 2026-01-02 13:23:15 [main] INFO  c.e.api_gatway.ApiGatewayApplication - Started ApiGatewayApplication in 71.074 seconds (process running for 83.717)

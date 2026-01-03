@@ -1,0 +1,50 @@
+﻿2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'POST /logout'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - No matches found
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/api/auth/**', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /api/auth/**'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/health', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Checking match of request : '/actuator/health'; against '/actuator/health'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/info', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /actuator/info'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /v3/api-docs/**'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /swagger-ui/**'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui.html', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /swagger-ui.html'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/webjars/**', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /webjars/**'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/favicon.ico', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /favicon.ico'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/error', method=null}
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /error'
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - matched
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.a.DelegatingReactiveAuthorizationManager - Checking authorization on '/actuator/health' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda$1025/0x00007e4792678880@3e068036
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.a.AuthorizationWebFilter - Authorization successful
+2026-01-02 15:03:21 [parallel-2] DEBUG o.s.s.w.s.c.WebSessionServerSecurityContextRepository - No SecurityContext found in WebSession: 'org.springframework.web.server.session.InMemoryWebSessionStore$InMemoryWebSession@3cfac71'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/logout', method=POST}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'POST /logout'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - No matches found
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/api/auth/**', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /api/auth/**'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/health', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Checking match of request : '/actuator/health'; against '/actuator/health'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/actuator/info', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /actuator/info'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/v3/api-docs/**', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /v3/api-docs/**'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui/**', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /swagger-ui/**'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/swagger-ui.html', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /swagger-ui.html'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/webjars/**', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /webjars/**'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/favicon.ico', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /favicon.ico'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - Trying to match using PathMatcherServerWebExchangeMatcher{pattern='/error', method=null}
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.PathPatternParserServerWebExchangeMatcher - Request 'GET /actuator/health' doesn't match 'null /error'
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.u.m.OrServerWebExchangeMatcher - matched
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.a.DelegatingReactiveAuthorizationManager - Checking authorization on '/actuator/health' using org.springframework.security.config.web.server.ServerHttpSecurity$AuthorizeExchangeSpec$Access$$Lambda$1025/0x00007e4792678880@3e068036
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.a.AuthorizationWebFilter - Authorization successful
+2026-01-02 15:03:26 [parallel-3] DEBUG o.s.s.w.s.c.WebSessionServerSecurityContextRepository - No SecurityContext found in WebSession: 'org.springframework.web.server.session.InMemoryWebSessionStore$InMemoryWebSession@68140e0a'

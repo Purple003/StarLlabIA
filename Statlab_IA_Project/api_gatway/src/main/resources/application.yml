@@ -1,0 +1,175 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  config:
+    import: "optional:consul:"
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+  cloud:
+    consul:
+      host: ${CONSUL_HOST:localhost}
+      port: ${CONSUL_PORT:8500}
+      discovery:
+        enabled: true
+        register: true
+        prefer-ip-address: true
+        instance-id: ${spring.application.name}:${random.value}
+        service-name: ${spring.application.name}
+        health-check-path: /actuator/health
+        health-check-interval: 30s
+        health-check-critical-timeout: 30s
+        fail-fast: false
+        tags:
+          - statlabia
+          - gateway
+          - ${spring.profiles.active}
+
+      config:
+        enabled: true
+        format: YAML
+        context-paths:
+          - config
+        default-context: application
+        profile-separator: "::"
+        data-key: data
+        watch:
+          enabled: true
+          delay: 1000
+        fail-fast: false
+
+    discovery:
+      simple:
+        enabled: false
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: false
+              lower-case-service-id: false
+
+          routes:
+            # ================= AUTH SERVICE =================
+            - id: auth-service
+              uri: http://172.22.0.7:8081
+              predicates:
+                - Path=/api/auth/**
+
+            # ================= DATASET SERVICE =================
+            - id: dataset-service
+              uri: lb://dataset-service
+              predicates:
+                - Path=/api/datasets/**
+              filters:
+                - JwtAuthenticationFilter
+
+            # ================= REPORT SERVICE =================
+            - id: report-service
+              uri: lb://report-service
+              predicates:
+                - Path=/api/reports/**
+              filters:
+                - JwtAuthenticationFilter
+
+            # ================= ANALYSIS SERVICE =================
+            - id: analysis-service
+              uri: lb://analysis-service
+              predicates:
+                - Path=/api/analysis/**
+              filters:
+                - JwtAuthenticationFilter
+
+            # ================= WEBSOCKET =================
+            - id: websocket-route
+              uri: lb://analysis-service
+              predicates:
+                - Path=/ws/**
+
+            # ================= ROUTE DYNAMIQUE (CATCH-ALL) =================
+            # - id: dynamic-route
+            #   uri: lb://statlabia
+            #   predicates:
+            #     - Path=/api/**
+            #   filters:
+            #     - StripPrefix=1
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 10000ms
+      connect-timeout: 10000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+        shutdown-timeout: 200ms
+
+# ================= MANAGEMENT / ACTUATOR =================
+management:
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,gateway
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
+
+# ================= LOGGING =================
+logging:
+  level:
+    com.example.api_gatway: ${LOG_LEVEL:DEBUG}
+    org.springframework.cloud.gateway: ${GATEWAY_LOG_LEVEL:INFO}
+    org.springframework.cloud.consul: ${CONSUL_LOG_LEVEL:INFO}
+    org.springframework.security: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# ================= RESILIENCE4J =================
+# resilience4j:
+#   circuitbreaker:
+#     instances:
+#       gatewayCircuitBreaker:
+#         sliding-window-size: 10
+#         failure-rate-threshold: 50
+#         wait-duration-in-open-state: 10s
+#         permitted-number-of-calls-in-half-open-state: 3
+#         sliding-window-type: COUNT_BASED
+#
+#       authCircuitBreaker:
+#         sliding-window-size: 50
+#         failure-rate-threshold: 50
+#         wait-duration-in-open-state: 5s
+#         permitted-number-of-calls-in-half-open-state: 5
+
+  timelimiter:
+    configs:
+      default:
+        timeout-duration: 20s # Increased for safety during verification
+
+# ================= SWAGGER =================
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - url: /v3/api-docs
+        name: API Gateway

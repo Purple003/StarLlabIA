@@ -1,0 +1,41 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:api_gatway >-----------------------
+[INFO] Building api_gatway 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ api_gatway ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ api_gatway ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 7 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/PC/Desktop/last/Statlab_IA_Project/api_gatway/src/main/java/com/example/api_gatway/ApiGatewayApplication.java:[6,2] cannot find symbol
+  symbol: class SpringBootApplication
+[ERROR] /C:/Users/PC/Desktop/last/Statlab_IA_Project/api_gatway/src/main/java/com/example/api_gatway/ApiGatewayApplication.java:[7,2] cannot find symbol
+  symbol: class EnableDiscoveryClient
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.673 s
+[INFO] Finished at: 2026-01-02T16:17:04+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project api_gatway: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/PC/Desktop/last/Statlab_IA_Project/api_gatway/src/main/java/com/example/api_gatway/ApiGatewayApplication.java:[6,2] cannot find symbol
+[ERROR]   symbol: class SpringBootApplication
+[ERROR] /C:/Users/PC/Desktop/last/Statlab_IA_Project/api_gatway/src/main/java/com/example/api_gatway/ApiGatewayApplication.java:[7,2] cannot find symbol
+[ERROR]   symbol: class EnableDiscoveryClient
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

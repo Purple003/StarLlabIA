@@ -1,0 +1,22 @@
+﻿Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2026-01-02T14:49:34.461Z  INFO 1 --- [auth-service] [           main] c.e.auth_service.AuthServiceApplication  : Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 1 (/app/app.jar started by spring in /app)
+2026-01-02T14:49:34.929Z  INFO 1 --- [auth-service] [           main] c.e.auth_service.AuthServiceApplication  : The following 1 profile is active: "dev"
+2026-01-02T14:49:36.614Z  INFO 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-01-02T14:49:36.622Z  INFO 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/auth-service/default": Connection refused. Will be trying the next url if available
+2026-01-02T14:49:36.650Z  WARN 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@f325091 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/auth-service/default": Connection refused
+2026-01-02T14:49:36.651Z  INFO 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-01-02T14:49:36.652Z  INFO 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/auth-service/dev": Connection refused. Will be trying the next url if available
+2026-01-02T14:49:36.652Z  WARN 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@e362c57 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:8888/auth-service/dev": Connection refused
+2026-01-02T14:49:36.652Z  INFO 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-01-02T14:49:36.652Z  INFO 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/auth-service/default": Connection refused. Will be trying the next url if available
+2026-01-02T14:49:36.652Z  WARN 1 --- [auth-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@1c4ee95c uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/auth-service/default": Connection refused

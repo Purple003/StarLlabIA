@@ -1,0 +1,100 @@
+﻿2026-01-02T14:23:04.414Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:23:31.353Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:23:31.356Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:23:31.376Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:23:34.442Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:23:34.458Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:23:34.481Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:24:01.521Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:24:01.650Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:24:01.676Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:24:04.484Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:24:04.489Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:24:04.528Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:24:31.780Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:24:31.786Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:24:31.802Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:24:34.550Z DEBUG 1 --- [auth-service] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:24:34.552Z DEBUG 1 --- [auth-service] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:24:34.561Z DEBUG 1 --- [auth-service] [nio-8081-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:25:01.945Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:25:01.951Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:25:01.979Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:25:04.570Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:25:04.573Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:25:04.585Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:25:32.143Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:25:32.150Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:25:32.175Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:25:34.591Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:25:34.594Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:25:34.618Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:26:02.274Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:26:02.276Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:26:02.286Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:26:04.628Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:26:04.632Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:26:04.651Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:26:32.519Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:26:32.543Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:26:32.645Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:26:34.658Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:26:34.660Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:26:34.673Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:27:02.758Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:27:02.761Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:27:02.780Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:27:04.682Z DEBUG 1 --- [auth-service] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:27:04.688Z DEBUG 1 --- [auth-service] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:27:04.720Z DEBUG 1 --- [auth-service] [nio-8081-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:27:32.922Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:27:32.926Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:27:32.941Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:27:34.727Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:27:34.732Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:27:34.751Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:28:03.066Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:28:03.068Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:28:03.087Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:28:04.767Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:28:04.769Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:28:04.793Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:28:30.338Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:28:30.353Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:28:30.541Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:28:33.193Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:28:33.197Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:28:33.216Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:28:34.800Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:28:34.804Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:28:34.818Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:29:03.331Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:29:03.334Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:29:03.351Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:29:04.823Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:29:04.828Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:29:04.846Z DEBUG 1 --- [auth-service] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:29:33.532Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:29:33.535Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:29:33.559Z DEBUG 1 --- [auth-service] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:29:34.849Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:29:34.850Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:29:34.859Z DEBUG 1 --- [auth-service] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:30:03.686Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:30:03.690Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:30:03.704Z DEBUG 1 --- [auth-service] [nio-8081-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:30:04.864Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:30:04.867Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:30:04.888Z DEBUG 1 --- [auth-service] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:30:33.786Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:30:33.789Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:30:33.804Z DEBUG 1 --- [auth-service] [nio-8081-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:30:34.907Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:30:34.912Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:30:34.938Z DEBUG 1 --- [auth-service] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:31:03.951Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:31:03.955Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:31:03.982Z DEBUG 1 --- [auth-service] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-02T14:31:04.944Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2026-01-02T14:31:04.948Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2026-01-02T14:31:04.966Z DEBUG 1 --- [auth-service] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext

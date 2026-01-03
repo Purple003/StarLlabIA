@@ -1,0 +1,10 @@
+services:
+  data-cleaning-service:
+    build: .
+    container_name: data-cleaning-service
+    networks:
+      - statlab-network
+
+networks:
+  statlab-network:
+    external: true
